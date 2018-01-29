@@ -4,8 +4,16 @@
              xmlns:local="clr-namespace:invAppMobail"
              x:Class="invAppMobail.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+
+
+    <ScrollView>
+        <StackLayout>
+            <Button x:Name="BarcodeRequest" Text="Искать в базе (скан штрихкода)"></Button>
+            <Button x:Name="NumberRequest" Text="Искать в базе (фильтр)"></Button>
+            <Button x:Name="Inventory" Text="Инвентаризация"></Button>
+            <Button x:Name="Settings" Text="Настройки"></Button>
+            <Button x:Name="Exit" Text="Выход"></Button>            
+        </StackLayout>        
+    </ScrollView>
 
 </ContentPage>
