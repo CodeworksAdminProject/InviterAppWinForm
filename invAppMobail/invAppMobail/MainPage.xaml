@@ -8,11 +8,32 @@
 
     <ScrollView>
         <StackLayout>
-            <Button x:Name="BarcodeRequest" Text="Искать в базе (скан штрихкода)"></Button>
-            <Button x:Name="NumberRequest" Text="Искать в базе (фильтр)"></Button>
-            <Button x:Name="Inventory" Text="Инвентаризация"></Button>
-            <Button x:Name="Settings" Text="Настройки"></Button>
-            <Button x:Name="Exit" Text="Выход"></Button>            
+            <Button 
+                x:Name="BarcodeRequest" 
+                Text="Искать в базе (скан штрихкода)" 
+                Clicked="BarcodeRequest_Click">
+            </Button>
+            <Button 
+                x:Name="NumberRequest" 
+                Text="Искать в базе (фильтр)"
+                Clicked="NumberRequest_Click">
+            </Button>
+            <Button 
+                x:Name="Inventory" 
+                Text="Инвентаризация"
+                Clicked="Inventory_Click">
+            </Button>
+            <Button 
+                x:Name="Settings" 
+                Text="Настройки"
+                Clicked="Settings_Click">
+            </Button>
+            <Button x:Name="Exit"
+                Text="Выход"
+                Clicked="Exit_Click"    
+                >
+            </Button>
+            
         </StackLayout>        
     </ScrollView>
 
